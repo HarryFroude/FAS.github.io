@@ -12,7 +12,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 20px; /* Add padding for better spacing */
     text-align: center;
     background: #004d40; /* Dark green from logo */
     position: relative;
@@ -23,7 +23,7 @@ header {
     max-width: 300px;
     height: auto;
     z-index: 10;
-    margin-top: 20px;
+    margin-top: 10px; /* Adjust margin */
 }
 
 .wave-container {
@@ -50,9 +50,9 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #00796b; /* Complementary color */
-    padding: 15px;
+    padding: 10px 0; /* Adjust padding */
     border-radius: 10px;
-    margin: 20px auto;
+    margin: 10px auto; /* Adjust margin */
     width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
@@ -115,7 +115,7 @@ nav a:hover {
     width: 100%;
     padding: 25px;
     background-color: #c8e6c9; /* Light green */
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
 }
@@ -124,6 +124,8 @@ nav a:hover {
     width: 100%;
     max-width: 600px; /* Limit max width */
     margin: 0 auto; /* Center on small screens */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to the iframe */
 }
 
 .map iframe {
