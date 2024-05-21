@@ -13,7 +13,7 @@ header {
     align-items: center;
     padding: 0;
     text-align: center;
-    background: #87CEEB; /* Adjusted color */
+    background: #87CEEB;
     position: relative;
     width: 100%;
 }
@@ -59,7 +59,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1.4em; /* Increased font size */
+    font-size: 1.4em;
     transition: all 0.3s;
     padding: 10px 20px;
     border-radius: 25px;
@@ -125,7 +125,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
-    flex: 0 0 150px; /* Reduced height for Contact Us */
+    flex: 0 0 150px;
 }
 
 .map {
@@ -140,20 +140,20 @@ nav a:hover {
 
 .map iframe {
     width: 100%;
-    height: 450px; /* Increased height for map */
+    height: 450px;
     border: 0;
     border-radius: 10px;
 }
 
 .about-us h2, .contact-info h2 {
     color: #005f87;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .about-us p, .contact-info p {
     color: #004d40;
-    font-size: 1.1em;
-    line-height: 1.5em;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
 
 .wave-container-bottom {
@@ -170,7 +170,7 @@ footer {
     text-align: center;
     padding: 40px 20px;
     position: relative;
-    margin-top: -5px; /* Overlap the wave slightly */
+    margin-top: -5px;
     border-radius: 0 0 20px 20px;
     width: 90%;
     margin: 20px auto;
@@ -191,7 +191,7 @@ footer p {
     justify-content: center;
     padding: 20px;
     background-color: #B0E0E6;
-    border-radius: 20px; /* Softened corners */
+    border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
