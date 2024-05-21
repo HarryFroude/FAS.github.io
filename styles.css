@@ -2,8 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #e0f7fa;
-    color: #004d40;
+    background: #f0f4f8;
+    color: #333;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     align-items: center;
     padding: 0;
     text-align: center;
-    background: #74c0fc;
+    background: #004d40; /* Dark green from logo */
     position: relative;
     width: 100%;
 }
@@ -48,7 +48,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #4dabf7;
+    background-color: #00796b; /* Complementary color */
     padding: 15px;
     border-radius: 10px;
     margin: 20px auto;
@@ -94,7 +94,7 @@ nav a:hover {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: #e3f2fd;
+    background-color: #ffffff;
     border-radius: 20px;
     margin: 20px auto;
     width: 90%;
@@ -111,7 +111,7 @@ nav a:hover {
 .about-us, .contact-info {
     width: 100%;
     padding: 25px;
-    background-color: #d0ebff;
+    background-color: #c8e6c9; /* Light green */
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
@@ -129,21 +129,21 @@ nav a:hover {
 }
 
 .about-us h2, .contact-info h2 {
-    color: #005f87;
+    color: #004d40;
     font-size: 1.7em;
 }
 
 .about-us p, .contact-info p {
-    color: #004d40;
+    color: #333;
     font-size: 1.2em;
     line-height: 1.6em;
 }
 
 footer {
-    background-color: #4dabf7;
+    background-color: #00796b;
     color: #fff;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px; /* Reduced padding */
     position: relative;
     border-radius: 0 0 20px 20px;
     width: 90%;
@@ -152,7 +152,7 @@ footer {
 }
 
 footer h2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
 footer p {
@@ -163,11 +163,10 @@ footer p {
 .instagram-carousel {
     display: flex;
     justify-content: center;
-    padding: 20px;
-    background-color: #d0ebff;
+    padding: 10px; /* Reduced padding */
+    background-color: #c8e6c9;
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
 }
 
 .instagram-carousel iframe {
