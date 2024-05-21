@@ -105,7 +105,7 @@ nav a:hover {
     background-color: #d0ebff;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -118,21 +118,13 @@ nav a:hover {
     justify-content: space-between;
 }
 
-.contact-info {
+.contact-info, .map {
     width: 100%;
     padding: 25px;
     background-color: #d0ebff;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-}
-
-.map {
-    width: 100%;
-    padding: 25px;
-    background-color: #d0ebff;
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
 }
 
 .map iframe {
