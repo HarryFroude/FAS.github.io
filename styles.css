@@ -32,6 +32,12 @@ nav a {
     margin: 0 15px;
     font-size: 1.2em;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px;
 }
 
 nav a:hover {
