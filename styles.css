@@ -10,6 +10,7 @@ header {
     background-color: #64ffda;
     padding: 20px;
     text-align: center;
+    position: relative;
 }
 
 .logo {
@@ -78,6 +79,7 @@ footer {
     background-color: #80deea;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .background-decor {
