@@ -70,6 +70,7 @@ footer {
     text-align: center;
     padding: 40px 20px;
     position: relative;
+    margin-top: 20px;
 }
 
 .instagram-carousel {
@@ -107,12 +108,20 @@ footer h2 {
     .contact-info, .map {
         width: 90%;
     }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
 }
 
 @media (max-width: 480px) {
     nav a {
         font-size: 1em;
-        margin: 0 10px;
+        margin: 5px 0;
     }
 
     .contact-info p, .contact-info h2 {
