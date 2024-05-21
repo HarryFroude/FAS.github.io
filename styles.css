@@ -153,14 +153,6 @@ nav a:hover {
     line-height: 1.6em;
 }
 
-.wave-container-bottom {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    position: relative;
-}
-
 footer {
     background-color: #4A8DB7;
     color: #fff;
