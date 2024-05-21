@@ -180,7 +180,7 @@ footer p {
 
     .social-map-container {
         flex-direction: row; /* Row direction for larger screens */
-        justify-content: center; /* Center elements horizontally */
+        justify-content: space-between; /* Space between elements */
         align-items: flex-start;
     }
 
