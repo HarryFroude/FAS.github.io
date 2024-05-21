@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #a0d8ef, #96d1f1, #6ec1e4);
+    background: linear-gradient(180deg, #87CEEB, #B0E0E6); /* Background gradient */
     color: #004d40;
 }
 
@@ -13,7 +13,7 @@ header {
     align-items: center;
     padding: 20px;
     text-align: center;
-    background: linear-gradient(120deg, #a0d8ef, #96d1f1, #6ec1e4);
+    background: #87CEEB; /* Light blue */
     position: relative;
 }
 
@@ -46,7 +46,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #4a8db7;
+    background-color: #4A8DB7; /* Medium blue */
     padding: 15px;
     border-radius: 10px;
     margin: 20px auto;
@@ -60,7 +60,7 @@ nav a {
     margin: 0 15px;
     font-size: 1.2em;
     transition: all 0.3s;
-    background-color: #005f87;
+    background-color: #1E6091; /* Darker blue */
     padding: 10px 20px;
     border-radius: 25px;
     display: flex;
@@ -72,7 +72,7 @@ nav a i {
 }
 
 nav a:hover {
-    background-color: #0077a7;
+    background-color: #154273; /* Even darker blue */
     color: #fff;
 }
 
@@ -80,7 +80,7 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: #bce0f2;
+    background-color: #E0FFFF; /* Light cyan */
     flex-wrap: wrap;
     border-radius: 20px;
     margin: 20px auto;
@@ -91,7 +91,7 @@ main {
 .contact-info, .map {
     width: 45%;
     padding: 25px;
-    background-color: #d2ecf9;
+    background-color: #B0E0E6; /* Powder blue */
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
@@ -117,7 +117,7 @@ main {
 }
 
 footer {
-    background-color: #4a8db7;
+    background-color: #4A8DB7; /* Medium blue */
     color: #fff;
     text-align: center;
     padding: 40px 20px;
@@ -133,7 +133,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #d2ecf9;
+    background-color: #B0E0E6; /* Powder blue */
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
