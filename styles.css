@@ -2,47 +2,48 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #004d40; /* Set background to green */
+    background: #E0F7FA; /* Light blue background similar to the concept image */
     color: #333;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    position: relative; /* Ensure waves can be positioned absolutely */
 }
 
 header {
+    background-image: url('/path/to/your/header-background-image.png'); /* Path to the new header background image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px; /* Add padding for better spacing */
-    text-align: center;
-    background: none; /* Make the header background transparent */
-    position: relative;
-    width: 100%;
-    z-index: 20; /* Ensure the header is above the waves */
 }
 
 .logo {
-    max-width: 450px; /* Increase size by 50% from 300px to 450px */
+    max-width: 300px;
     height: auto;
-    z-index: 20;
-    margin: 20px 0; /* Center the logo vertically */
+    margin-bottom: 20px;
 }
 
 .wave-container {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    position: relative; /* Make the waves position relative */
-    top: 0;
-    left: 0;
-    z-index: 15; /* Ensure waves are below the header but above the main content */
+    position: relative;
+    top: -5px;
+    z-index: 10;
 }
 
 .waves {
     position: relative;
     display: block;
-    width: 100%;
-    height: 200px; /* Adjust height of the waves */
+    width: calc(200% + 1.3px);
+    height: 200px;
 }
 
 .wave-container svg {
@@ -55,13 +56,13 @@ nav {
     display: flex;
     justify-content: center;
     background-color: #00796b; /* Complementary color */
-    padding: 15px 0; /* Adjust padding */
+    padding: 15px 0;
     border-radius: 10px;
-    margin: 20px auto; /* Adjust margin */
+    margin: 20px auto;
     width: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
-    z-index: 20; /* Ensure nav is above the waves */
+    z-index: 20;
 }
 
 nav a {
@@ -100,42 +101,42 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px 20px; /* Increase padding */
-    background: none; /* Make the main content background transparent */
+    padding: 40px 20px;
+    background: none;
     border-radius: 20px;
     margin: 20px auto;
     width: 90%;
-    z-index: 20; /* Ensure main content is above the waves */
+    z-index: 20;
     flex-wrap: wrap;
-    gap: 20px; /* Add gap between elements */
+    gap: 20px;
 }
 
 .left-column {
     display: flex;
     flex-direction: column;
-    width: 100%; /* Make full width on small screens */
-    max-width: 45%; /* Adjust max width */
-    margin-bottom: 20px; /* Add spacing between sections */
+    width: 100%;
+    max-width: 45%;
+    margin-bottom: 20px;
 }
 
 .about-us, .contact-info {
     width: 100%;
     padding: 25px;
-    background-color: rgba(200, 230, 201, 0.9); /* Light green with transparency */
-    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
 }
 
 .map {
     width: 100%;
-    max-width: 50%; /* Adjust max width */
-    margin: 0 auto; /* Center on small screens */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Ensure rounded corners apply to the iframe */
-    margin-top: 20px; /* Add gap above map */
-    background: #fff; /* White background for map container */
-    padding: 15px; /* Add padding inside map container */
+    max-width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
 }
 
 .map iframe {
@@ -160,17 +161,17 @@ footer {
     background-color: rgba(0, 121, 107, 0.9); /* Transparent complementary color */
     color: #fff;
     text-align: center;
-    padding: 20px 20px; /* Reduced padding */
+    padding: 20px 20px;
     position: relative;
     border-radius: 0 0 20px 20px;
     width: 90%;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 20; /* Ensure footer is above the waves */
+    z-index: 20;
 }
 
 footer h2 {
-    margin-bottom: 10px; /* Reduced margin */
+    margin-bottom: 10px;
 }
 
 footer p {
@@ -181,11 +182,11 @@ footer p {
 .instagram-carousel {
     display: flex;
     justify-content: center;
-    padding: 10px 0; /* Reduced padding */
-    background-color: rgba(200, 230, 201, 0.9); /* Light green with transparency */
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin: 0; /* Remove margin */
+    margin: 0;
 }
 
 .instagram-carousel iframe {
@@ -198,7 +199,7 @@ footer p {
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
     .logo {
-        max-width: 375px; /* Adjust size for medium screens */
+        max-width: 375px;
     }
 
     .main-content {
@@ -226,7 +227,7 @@ footer p {
     }
 
     .map {
-        margin-top: 20px; /* Ensure gap above map */
+        margin-top: 20px;
     }
 }
 
@@ -248,7 +249,7 @@ footer p {
     .main-content {
         flex-direction: column;
         align-items: center;
-        gap: 20px; /* Ensure gap between elements */
+        gap: 20px;
     }
 
     .left-column, .map {
