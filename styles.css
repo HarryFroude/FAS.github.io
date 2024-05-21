@@ -4,6 +4,7 @@ body {
     padding: 0;
     background: #f0f4f8;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
@@ -105,7 +106,9 @@ nav a:hover {
 .left-column {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 100%; /* Make full width on small screens */
+    max-width: 500px; /* Limit max width */
+    margin-bottom: 20px; /* Add spacing between sections */
 }
 
 .about-us, .contact-info {
@@ -118,7 +121,9 @@ nav a:hover {
 }
 
 .map {
-    width: 60%;
+    width: 100%;
+    max-width: 600px; /* Limit max width */
+    margin: 0 auto; /* Center on small screens */
 }
 
 .map iframe {
