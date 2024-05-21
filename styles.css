@@ -30,28 +30,6 @@ header {
     margin-bottom: 20px;
 }
 
-.wave-container {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    position: relative;
-    top: -5px;
-    z-index: 10;
-}
-
-.waves {
-    position: relative;
-    display: block;
-    width: calc(200% + 1.3px);
-    height: 200px;
-}
-
-.wave-container svg {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .main-content {
     display: flex;
     flex-direction: row;
@@ -70,6 +48,15 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 50%; /* Adjusted width */
+}
+
+.map {
+    width: 50%; /* Adjusted width */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -78,11 +65,12 @@ header {
     padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 100%;
-    max-width: 300px;
     transition: transform 0.3s;
     text-decoration: none; /* Ensure the entire block is clickable */
     color: inherit; /* Ensure the text color remains the same */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card:hover {
@@ -117,7 +105,20 @@ header {
     color: white;
 }
 
-.about-us, .contact-info, .map {
+.about-contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: none;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    z-index: 20;
+    gap: 20px;
+}
+
+.about-us, .contact-info {
     width: 100%;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -140,7 +141,7 @@ header {
 
 .map iframe {
     width: 100%;
-    height: 400px;
+    height: 100%;
     border: 0;
     border-radius: 10px;
 }
@@ -174,7 +175,7 @@ footer p {
         align-items: center;
     }
 
-    .about-us, .contact-info, .map {
+    .social-media-section, .map {
         width: 90%;
     }
 }
@@ -185,10 +186,8 @@ footer p {
         align-items: center;
     }
 
-    .social-media-section {
+    .social-media-section, .map {
         width: 100%;
-        flex-direction: column;
-        gap: 20px;
     }
 
     .about-us p, .contact-info p, .about-us h2, .contact-info h2 {
