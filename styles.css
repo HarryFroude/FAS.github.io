@@ -92,3 +92,7 @@ footer {
     background-size: cover;
     z-index: -1;
 }
+
+footer h2 {
+    margin-bottom: 20px;
+}
