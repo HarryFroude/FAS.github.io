@@ -11,31 +11,31 @@
 </head>
 <body>
     <header>
-        <img src="Fish_Around_Logo.png" alt="Fish Around Logo" class="logo">
-        <nav>
-            <a href="https://www.instagram.com/fish_around_hailsham" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://www.facebook.com/profile.php?id=100085243149990" target="_blank" class="facebook"><i class="fab fa-facebook"></i> Facebook</a>
-            <a href="https://www.amazon.co.uk/s?i=merchant-items&me=AJ205TMNCG22W&rh=n%3A340840031%2Cn%3A451111031&dc&ds=v1%3ArU1qwzZPAhYHUxWVkFtdNzKI6QEICYgtPypOgbZ%2FTKI&marketplaceID=A1F83G8C2ARO7P&qid=1716298141&rnid=340840031&ref=sr_nr_n_3" target="_blank" class="amazon"><i class="fab fa-amazon"></i> Amazon Store Page</a>
-        </nav>
+        <div class="header-content">
+            <img src="Fish_Around_Logo.png" alt="Fish Around Logo" class="logo">
+        </div>
         <div class="wave-container">
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,160C384,139,480,117,576,101.3C672,85,768,75,864,80C960,85,1056,107,1152,133.3C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
             </svg>
         </div>
     </header>
+    <nav>
+        <a href="https://www.instagram.com/fish_around_hailsham" target="_blank" class="instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=100085243149990" target="_blank" class="facebook"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://www.amazon.co.uk/s?i=merchant-items&me=AJ205TMNCG22W&rh=n%3A340840031%2Cn%3A451111031&dc&ds=v1%3ArU1qwzZPAhYHUxWVkFtdNzKI6QEICYgtPypOgbZ%2FTKI&marketplaceID=A1F83G8C2ARO7P&qid=1716298141&rnid=340840031&ref=sr_nr_n_3" target="_blank" class="amazon"><i class="fab fa-amazon"></i> Amazon Store Page</a>
+    </nav>
     <main>
         <div class="main-content">
-            <div class="left-column">
-                <div class="about-us">
-                    <h2>About Us</h2>
-                    <p>Family run Aquatic Centre in Hailsham High St. All Aquatic supplies. Special orders. Aquarium servicing.</p>
-                </div>
-                <div class="contact-info">
-                    <h2>Contact Us</h2>
-                    <p>5 High St, Hailsham, United Kingdom</p>
-                    <p>Email: <a href="mailto:Fisharoundhailsham@outlook.com">Fisharoundhailsham@outlook.com</a></p>
-                    <p>Phone: <a href="tel:01323844400">01323 844400</a></p>
-                </div>
+            <div class="about-us">
+                <h2>About Us</h2>
+                <p>Family run Aquatic Centre in Hailsham High St. All Aquatic supplies. Special orders. Aquarium servicing.</p>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>5 High St, Hailsham, United Kingdom</p>
+                <p>Email: <a href="mailto:Fisharoundhailsham@outlook.com">Fisharoundhailsham@outlook.com</a></p>
+                <p>Phone: <a href="tel:01323844400">01323 844400</a></p>
             </div>
             <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.212432531738!2d0.2572473157518749!3d50.86598277953396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df713c5a505fdb%3A0x1ba8c5f44b5f0c7b!2s5%20High%20St%2C%20Hailsham%20BN27%201AL%2C%20UK!5e0!3m2!1sen!2sus!4v1687385640342!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -49,14 +49,5 @@
             <iframe src="https://snapwidget.com/embed/1068179" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:400px" title="Posts from Instagram"></iframe>
         </div>
     </footer>
-    <script>
-        window.addEventListener('scroll', function() {
-            const parallaxElements = document.querySelectorAll('.parallax use');
-            const scrollPosition = window.pageYOffset;
-            parallaxElements.forEach((element, index) => {
-                element.setAttribute('y', scrollPosition * 0.1 * (index + 1));
-            });
-        });
-    </script>
 </body>
 </html>
