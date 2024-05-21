@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f4f8;
+    background: none; /* Make the body background transparent */
     color: #333;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -14,9 +14,10 @@ header {
     align-items: center;
     padding: 20px; /* Add padding for better spacing */
     text-align: center;
-    background: #004d40; /* Dark green from logo */
+    background: none; /* Make the header background transparent */
     position: relative;
     width: 100%;
+    z-index: 10; /* Ensure the header is above the waves */
 }
 
 .logo {
@@ -30,7 +31,10 @@ header {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    position: relative;
+    position: absolute; /* Make the waves position absolute */
+    top: 0;
+    left: 0;
+    z-index: 5; /* Ensure waves are below the header but above the main content */
 }
 
 .waves {
@@ -95,11 +99,11 @@ nav a:hover {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: #ffffff;
+    background: none; /* Make the main content background transparent */
     border-radius: 20px;
     margin: 20px auto;
     width: 90%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure main content is above the waves */
     flex-wrap: wrap;
 }
 
@@ -114,7 +118,7 @@ nav a:hover {
 .about-us, .contact-info {
     width: 100%;
     padding: 25px;
-    background-color: #c8e6c9; /* Light green */
+    background-color: rgba(200, 230, 201, 0.9); /* Light green with transparency */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
@@ -147,7 +151,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #00796b;
+    background-color: rgba(0, 121, 107, 0.9); /* Transparent complementary color */
     color: #fff;
     text-align: center;
     padding: 20px 20px; /* Reduced padding */
@@ -171,7 +175,7 @@ footer p {
     display: flex;
     justify-content: center;
     padding: 10px 0; /* Reduced padding */
-    background-color: #c8e6c9;
+    background-color: rgba(200, 230, 201, 0.9); /* Light green with transparency */
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 0; /* Remove margin */
