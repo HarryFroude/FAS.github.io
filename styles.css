@@ -13,7 +13,7 @@ header {
     align-items: center;
     padding: 0;
     text-align: center;
-    background: #87CEEB;
+    background: #74c0fc;
     position: relative;
     width: 100%;
 }
@@ -47,7 +47,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #4A8DB7;
+    background-color: #4dabf7;
     padding: 15px;
     border-radius: 10px;
     margin: 20px auto;
@@ -72,7 +72,7 @@ nav a i {
 }
 
 nav a.instagram {
-    background-color: #E1306C;
+    background-color: #e1306c;
 }
 
 nav a.facebook {
@@ -80,7 +80,7 @@ nav a.facebook {
 }
 
 nav a.amazon {
-    background-color: #FF9900;
+    background-color: #ff9900;
 }
 
 nav a:hover {
@@ -91,7 +91,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: white;
+    background-color: #e3f2fd;
     flex-wrap: wrap;
     border-radius: 20px;
     margin: 20px auto;
@@ -100,9 +100,9 @@ nav a:hover {
 }
 
 .about-us {
-    width: 35%;  /* Adjusted width */
+    width: 35%;
     padding: 25px;
-    background-color: #B0E0E6;
+    background-color: #d0ebff;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
@@ -112,7 +112,7 @@ nav a:hover {
 }
 
 .contact-map-container {
-    width: 60%;  /* Adjusted width */
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -121,16 +121,16 @@ nav a:hover {
 .contact-info {
     width: 100%;
     padding: 25px;
-    background-color: #B0E0E6;
+    background-color: #d0ebff;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;  /* Adjusted margin */
+    margin-bottom: 10px;
 }
 
 .map {
     width: 100%;
     padding: 25px;
-    background-color: #B0E0E6;
+    background-color: #d0ebff;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -154,7 +154,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #4A8DB7;
+    background-color: #4dabf7;
     color: #fff;
     text-align: center;
     padding: 40px 20px;
@@ -178,7 +178,7 @@ footer p {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background-color: #B0E0E6;
+    background-color: #d0ebff;
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
