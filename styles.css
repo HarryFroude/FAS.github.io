@@ -29,13 +29,12 @@ header {
     overflow: hidden;
     line-height: 0;
     position: relative;
-    margin-bottom: -7px; /* Adjusted to avoid gaps between waves and content */
 }
 
 .waves {
     position: relative;
     display: block;
-    width: 100%;
+    width: calc(200% + 1.3px);
     height: 150px;
 }
 
@@ -91,7 +90,7 @@ nav a:hover {
 }
 
 .about-us {
-    width: 35%;
+    width: 40%;
     padding: 25px;
     background-color: #B0E0E6;
     border-radius: 10px;
@@ -103,7 +102,7 @@ nav a:hover {
 }
 
 .contact-map-container {
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
