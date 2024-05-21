@@ -134,17 +134,34 @@ nav a:hover {
     line-height: 1.5em;
 }
 
+.wave-container-bottom {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    position: relative;
+}
+
 footer {
     background-color: #4A8DB7;
     color: #fff;
     text-align: center;
     padding: 40px 20px;
     position: relative;
-    margin-top: 20px;
-    border-radius: 20px;
+    margin-top: -5px; /* Overlap the wave slightly */
+    border-radius: 0 0 20px 20px;
     width: 90%;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
 }
 
 .instagram-carousel {
@@ -155,10 +172,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-}
-
-footer h2 {
-    margin-bottom: 20px;
 }
 
 /* Media Queries for Responsiveness */
@@ -195,4 +208,3 @@ footer h2 {
         padding: 15px;
     }
 }
-
