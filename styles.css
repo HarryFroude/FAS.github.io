@@ -6,6 +6,20 @@ body {
     color: #004d40;
 }
 
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-bottom: -7px; /* Adjust based on your content */
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+}
+
 header {
     display: flex;
     justify-content: center;
