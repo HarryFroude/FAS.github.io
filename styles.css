@@ -114,19 +114,6 @@ header {
     color: white;
 }
 
-.about-contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    background: none;
-    border-radius: 20px;
-    margin: 20px auto;
-    width: 90%;
-    z-index: 20;
-    gap: 20px;
-}
-
 .about-us, .contact-info {
     width: 100%;
     background: rgba(255, 255, 255, 0.9);
@@ -177,11 +164,21 @@ footer p {
 @media (min-width: 768px) {
     .social-map-container {
         flex-direction: row; /* Row direction for larger screens */
-        justify-content: center; /* Center elements horizontally */
+        justify-content: space-between; /* Space between elements */
         gap: 20px;
     }
 
     .social-media-section, .map {
+        width: 48%; /* Adjusted width for larger screens */
+    }
+
+    .about-contact-section {
+        flex-direction: row; /* Row direction for larger screens */
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .about-us, .contact-info {
         width: 48%; /* Adjusted width for larger screens */
     }
 }
