@@ -76,9 +76,9 @@ nav a:hover {
     color: #fff;
 }
 
-main {
+.main-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
     background-color: #E0FFFF; /* Light cyan */
     flex-wrap: wrap;
@@ -88,8 +88,8 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contact-info, .map {
-    width: 45%;
+.about-us, .contact-info, .map {
+    width: 30%;
     padding: 25px;
     background-color: #B0E0E6; /* Powder blue */
     border-radius: 10px;
@@ -105,12 +105,12 @@ main {
     border-radius: 10px;
 }
 
-.contact-info h2 {
+.about-us h2, .contact-info h2 {
     color: #005f87;
     font-size: 1.5em;
 }
 
-.contact-info p {
+.about-us p, .contact-info p {
     color: #004d40;
     font-size: 1.1em;
     line-height: 1.5em;
@@ -145,12 +145,12 @@ footer h2 {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    main {
+    .main-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .contact-info, .map {
+    .about-us, .contact-info, .map {
         width: 90%;
     }
 
@@ -169,7 +169,7 @@ footer h2 {
         margin: 5px 0;
     }
 
-    .contact-info p, .contact-info h2 {
+    .about-us p, .contact-info p, .about-us h2, .contact-info h2 {
         font-size: 1em;
     }
 
