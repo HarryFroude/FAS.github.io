@@ -88,8 +88,25 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-us, .contact-info, .map {
+.about-us {
     width: 30%;
+    padding: 25px;
+    background-color: #B0E0E6; /* Powder blue */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+.contact-map-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-info, .map {
+    width: 100%;
     padding: 25px;
     background-color: #B0E0E6; /* Powder blue */
     border-radius: 10px;
@@ -99,8 +116,7 @@ nav a:hover {
 
 .map iframe {
     width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+    height: 100%;
     border: 0;
     border-radius: 10px;
 }
