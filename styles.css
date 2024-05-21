@@ -44,19 +44,22 @@ header {
     gap: 20px;
 }
 
-.social-media-section {
+.social-map-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     gap: 20px;
-    width: 100%; /* Full width on mobile */
 }
 
-.map {
-    width: 100%; /* Full width on mobile */
-    background: rgba(255, 255, 255, 0.9);
+.social-media-section, .map {
+    flex: 1;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%; /* Ensure iframe fills its container */
+    border: 0;
     border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -72,6 +75,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add margin to space out cards */
 }
 
 .card:hover {
@@ -140,13 +144,6 @@ header {
     line-height: 1.6em;
 }
 
-.map iframe {
-    width: 100%;
-    height: 100%; /* Ensure iframe fills its container */
-    border: 0;
-    border-radius: 10px;
-}
-
 footer {
     background-color: rgba(0, 121, 107, 0.9); /* Transparent complementary color */
     color: #fff;
@@ -168,26 +165,31 @@ footer p {
 /* Media Queries for Responsiveness */
 @media (min-width: 768px) {
     .main-content {
+        flex-direction: column; /* Column direction to maintain vertical stacking */
+    }
+
+    .social-map-container {
         flex-direction: row; /* Row direction for larger screens */
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center; /* Center elements horizontally */
     }
 
     .social-media-section, .map {
         width: 48%; /* Adjusted width for larger screens */
     }
 
-    .social-media-section {
-        align-items: center;
+    .about-contact-section {
+        flex-direction: row; /* Row direction for larger screens */
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about-us, .contact-info {
+        width: 48%; /* Adjusted width for larger screens */
     }
 }
 
 @media (min-width: 1024px) {
     .logo {
         max-width: 375px;
-    }
-
-    .about-us, .contact-info {
-        width: 48%; /* Adjusted width for larger screens */
     }
 }
