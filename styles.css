@@ -52,61 +52,23 @@ header {
     height: auto;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #00796b; /* Complementary color */
-    padding: 15px 0;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
-    z-index: 20;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 5px 10px;
-    font-size: 1.2em;
-    transition: all 0.3s;
-    padding: 10px 20px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-}
-
-nav a i {
-    margin-right: 8px;
-}
-
-nav a.instagram {
-    background-color: #e1306c;
-}
-
-nav a.facebook {
-    background-color: #3b5998;
-}
-
-nav a.amazon {
-    background-color: #ff9900;
-}
-
-nav a:hover {
-    opacity: 0.8;
-}
-
 .main-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 40px 20px;
     background: none;
     border-radius: 20px;
     margin: 20px auto;
     width: 90%;
     z-index: 20;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-media-section {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -118,6 +80,13 @@ nav a:hover {
     text-align: center;
     width: 100%;
     max-width: 300px;
+    transition: transform 0.3s;
+    text-decoration: none; /* Ensure the entire block is clickable */
+    color: inherit; /* Ensure the text color remains the same */
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card h3 {
@@ -128,11 +97,24 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.card a {
-    display: inline-block;
-    margin-top: 10px;
+.card i {
     font-size: 2em;
     color: inherit;
+}
+
+.card.instagram {
+    background-color: #e1306c;
+    color: white;
+}
+
+.card.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.card.amazon {
+    background-color: #ff9900;
+    color: white;
 }
 
 .about-us, .contact-info, .map {
@@ -188,6 +170,7 @@ footer p {
     }
 
     .main-content {
+        flex-direction: column;
         align-items: center;
     }
 
@@ -197,9 +180,15 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    nav a {
-        font-size: 1em;
-        margin: 5px 5px;
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media-section {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .about-us p, .contact-info p, .about-us h2, .contact-info h2 {
@@ -212,27 +201,31 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    nav {
+    .main-content {
         flex-direction: column;
+        align-items: center;
     }
 
-    nav a {
-        font-size: 0.9em;
-        margin: 5px 0;
-        padding: 8px 16px;
+    .social-media-section {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
     }
 
     .about-us p, .contact-info p, .about-us h2, .contact-info h2 {
         font-size: 1em;
     }
 
-    .main-content {
-        align-items: center;
-        gap: 20px;
-    }
-
     .about-us, .contact-info, .map {
         width: 100%;
+    }
+
+    .map iframe {
+        height: 300px;
     }
 
     footer {
