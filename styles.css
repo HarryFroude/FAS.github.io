@@ -115,7 +115,7 @@ nav a:hover {
     width: 100%;
     padding: 25px;
     background-color: #c8e6c9; /* Light green */
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
 }
@@ -124,6 +124,8 @@ nav a:hover {
     width: 100%;
     max-width: 600px; /* Limit max width */
     margin: 0 auto; /* Center on small screens */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to the iframe */
 }
 
 .map iframe {
@@ -168,10 +170,11 @@ footer p {
 .instagram-carousel {
     display: flex;
     justify-content: center;
-    padding: 10px; /* Reduced padding */
+    padding: 10px 0; /* Reduced padding */
     background-color: #c8e6c9;
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove margin */
 }
 
 .instagram-carousel iframe {
@@ -208,7 +211,7 @@ footer p {
     }
 
     .instagram-carousel {
-        padding: 15px;
+        padding: 10px 0;
     }
 }
 
@@ -237,7 +240,7 @@ footer p {
     }
 
     .instagram-carousel {
-        padding: 10px;
+        padding: 10px 0;
     }
 
     footer {
