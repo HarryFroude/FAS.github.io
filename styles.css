@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-image: url('Background_Image.png'); /* Path to the new header background image */
+    background-image: url('path_to_image/header_background.png'); /* Path to the new header background image */
     background-size: cover;
     background-position: center;
     padding: 50px 20px;
@@ -32,7 +32,9 @@ header {
 
 .main-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack elements vertically on mobile */
+    justify-content: center;
+    align-items: center;
     padding: 40px 20px;
     background: none;
     border-radius: 20px;
@@ -40,18 +42,17 @@ header {
     width: 90%;
     z-index: 20;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .social-media-section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 48%; /* Adjusted width */
+    width: 100%; /* Full width on mobile */
 }
 
 .map {
-    width: 48%; /* Adjusted width */
+    width: 100%; /* Full width on mobile */
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 25px;
@@ -70,6 +71,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%; /* Full width on mobile */
 }
 
 .card:hover {
@@ -164,70 +166,30 @@ footer p {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
+    .main-content {
+        flex-direction: row; /* Row direction for larger screens */
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .social-media-section, .map {
+        width: 48%; /* Adjusted width for larger screens */
+    }
+
+    .about-contact-section {
+        flex-direction: row; /* Row direction for larger screens */
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
     .logo {
         max-width: 375px;
     }
 
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-media-section, .map {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-media-section, .map {
-        width: 100%;
-    }
-
-    .about-us p, .contact-info p, .about-us h2, .contact-info h2 {
-        font-size: 1.2em;
-    }
-
-    .map iframe {
-        height: 300px;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-media-section {
-        width: 100%;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .about-us p, .contact-info p, .about-us h2, .contact-info h2 {
-        font-size: 1em;
-    }
-
-    .about-us, .contact-info, .map {
-        width: 100%;
-    }
-
-    .map iframe {
-        height: 300px;
-    }
-
-    footer {
-        width: 100%;
-        padding: 20px 10px;
+    .about-us, .contact-info {
+        width: 48%; /* Adjusted width for larger screens */
     }
 }
