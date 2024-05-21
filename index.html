@@ -72,5 +72,14 @@
             <iframe src="https://snapwidget.com/embed/1068179" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:400px" title="Posts from Instagram"></iframe>
         </div>
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const parallaxElements = document.querySelectorAll('.parallax use');
+            const scrollPosition = window.pageYOffset;
+            parallaxElements.forEach((element, index) => {
+                element.setAttribute('y', scrollPosition * 0.1 * (index + 1));
+            });
+        });
+    </script>
 </body>
 </html>
