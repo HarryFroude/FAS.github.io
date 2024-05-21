@@ -46,20 +46,23 @@ header {
 
 .social-map-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack vertically on smaller screens */
+    justify-content: center;
+    align-items: center;
     width: 100%;
     gap: 20px;
 }
 
 .social-media-section, .map {
     flex: 1;
+    width: 100%; /* Full width on mobile */
 }
 
-.map iframe {
-    width: 100%;
-    height: 100%; /* Ensure iframe fills its container */
-    border: 0;
+.map {
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card {
@@ -144,6 +147,13 @@ header {
     line-height: 1.6em;
 }
 
+.map iframe {
+    width: 100%;
+    height: 100%; /* Ensure iframe fills its container */
+    border: 0;
+    border-radius: 10px;
+}
+
 footer {
     background-color: rgba(0, 121, 107, 0.9); /* Transparent complementary color */
     color: #fff;
@@ -171,25 +181,24 @@ footer p {
     .social-map-container {
         flex-direction: row; /* Row direction for larger screens */
         justify-content: center; /* Center elements horizontally */
+        align-items: flex-start;
     }
 
     .social-media-section, .map {
         width: 48%; /* Adjusted width for larger screens */
     }
 
-    .about-contact-section {
-        flex-direction: row; /* Row direction for larger screens */
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .about-us, .contact-info {
-        width: 48%; /* Adjusted width for larger screens */
+    .social-media-section {
+        align-items: center;
     }
 }
 
 @media (min-width: 1024px) {
     .logo {
         max-width: 375px;
+    }
+
+    .about-us, .contact-info {
+        width: 48%; /* Adjusted width for larger screens */
     }
 }
