@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: white; /* Changed body background to white */
+    background: white;
     color: #004d40;
 }
 
@@ -11,9 +11,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0; /* Removed padding */
+    padding: 0;
     text-align: center;
-    background: #87CEEB;
+    background: #87CEEB; /* Adjusted color */
     position: relative;
     width: 100%;
 }
@@ -59,9 +59,8 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1.2em;
+    font-size: 1.4em; /* Increased font size */
     transition: all 0.3s;
-    background-color: #1E6091;
     padding: 10px 20px;
     border-radius: 25px;
     display: flex;
@@ -72,9 +71,20 @@ nav a i {
     margin-right: 8px;
 }
 
+nav a.instagram {
+    background-color: #E1306C;
+}
+
+nav a.facebook {
+    background-color: #3b5998;
+}
+
+nav a.amazon {
+    background-color: #FF9900;
+}
+
 nav a:hover {
-    background-color: #154273;
-    color: #fff;
+    opacity: 0.8;
 }
 
 .main-content {
@@ -115,7 +125,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
-    flex: 0 0 200px; /* Set a fixed height for Contact Us */
+    flex: 0 0 150px; /* Reduced height for Contact Us */
 }
 
 .map {
@@ -125,12 +135,12 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
-    flex-grow: 1; /* Let the map take up the remaining space */
+    flex-grow: 1;
 }
 
 .map iframe {
     width: 100%;
-    height: 400px; /* Increase height as needed */
+    height: 450px; /* Increased height for map */
     border: 0;
     border-radius: 10px;
 }
@@ -181,7 +191,7 @@ footer p {
     justify-content: center;
     padding: 20px;
     background-color: #B0E0E6;
-    border-radius: 10px;
+    border-radius: 20px; /* Softened corners */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
