@@ -31,8 +31,14 @@ header {
 }
 
 .waves {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 150px; /* Adjust height as needed */
+}
+
+.wave-container svg {
+    display: block;
     width: 100%;
     height: auto;
 }
