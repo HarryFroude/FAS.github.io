@@ -28,10 +28,11 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-size: 1.2em;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ff4081;
 }
 
 main {
@@ -43,6 +44,10 @@ main {
 
 .contact-info, .map {
     width: 45%;
+    padding: 20px;
+    background-color: #b2ebf2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info h2 {
