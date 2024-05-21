@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 300px; /* Increased from 200px to 300px */
     height: auto;
     z-index: 10;
     margin-top: 20px;
