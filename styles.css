@@ -24,6 +24,13 @@ header {
     align-items: center;
 }
 
+.header-separator {
+    height: 5px;
+    background-color: #9b59b6; /* Purple line */
+    width: 100%;
+    margin-top: -5px; /* Adjust this value to perfectly align with header bottom */
+}
+
 .logo {
     max-width: 300px;
     height: auto;
@@ -58,14 +65,19 @@ header {
     width: 100%; /* Full width on mobile */
 }
 
-.map {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+.map, .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Ensure the same height */
     padding: 25px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
-.card, .about-us, .contact-info {
+.card, .about-us {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px;
@@ -116,9 +128,22 @@ header {
 
 .map iframe {
     width: 100%;
-    height: 400px;
+    height: 100%;
     border: 0;
     border-radius: 10px;
+}
+
+.postcard {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: url('path_to_store_image.jpg') no-repeat center center / cover;
+    border: 5px solid #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: rotate(-10deg);
+    z-index: 30;
 }
 
 footer {
@@ -159,5 +184,15 @@ footer p {
 @media (min-width: 1024px) {
     .logo {
         max-width: 375px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-content {
+        transform: scale(0.8); /* Reduce size by 20% */
+    }
+
+    .map, .contact-info {
+        height: auto; /* Adjust height to auto for mobile */
     }
 }
