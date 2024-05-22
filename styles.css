@@ -66,7 +66,7 @@ header {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px; /* Increased padding */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s;
@@ -83,6 +83,7 @@ header {
     width: 100%; /* Ensure cards take up full width */
     margin-bottom: 20px; /* Add margin to space out cards */
     border-radius: 15px; /* Rounded corners */
+    padding: 25px; /* Added padding */
 }
 
 .card:hover {
@@ -124,17 +125,11 @@ header {
     border-radius: 10px;
 }
 
-.postcard {
-    width: 450px; /* 3 times bigger */
-    height: 300px; /* 3 times bigger */
-    position: absolute;
-    bottom: -30px; /* Adjust to cover bottom right */
-    right: -30px; /* Adjust to cover bottom right */
-    background: url('FAStoreFront.jpg') no-repeat center center / cover;
-    border: 5px solid #fff;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    transform: rotate(-10deg);
-    z-index: 30;
+.about-img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
 }
 
 footer {
