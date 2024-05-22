@@ -53,31 +53,15 @@ header {
 
 .social-map-container {
     display: flex;
-    flex-direction: column; /* Stack vertically on smaller screens */
-    justify-content: center;
-    align-items: center;
+    flex-direction: row; /* Row direction for larger screens */
+    justify-content: space-between; /* Space between elements */
+    align-items: flex-start; /* Align items at the top */
     width: 100%;
     gap: 20px;
 }
 
-.social-media-section, .map, .about-us, .contact-info {
+.social-media-section, .about-us, .map, .contact-info {
     flex: 1;
-    width: 100%; /* Full width on mobile */
-}
-
-.map, .contact-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 400px; /* Ensure the same height */
-    padding: 25px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.9);
-}
-
-.card, .about-us {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px;
@@ -90,7 +74,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Full width on mobile */
+}
+
+.card {
+    width: 100%; /* Ensure cards take up full width */
     margin-bottom: 20px; /* Add margin to space out cards */
 }
 
@@ -194,5 +181,13 @@ footer p {
 
     .map, .contact-info {
         height: auto; /* Adjust height to auto for mobile */
+    }
+
+    .social-media-section, .about-us, .map, .contact-info {
+        width: 100%; /* Ensure full width on mobile */
+    }
+
+    .card {
+        margin-bottom: 20px; /* Ensure spacing between cards */
     }
 }
