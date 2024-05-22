@@ -73,12 +73,11 @@ main {
 
 .social-map-container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .social-media-section, .about-us, .map-container, .contact-section {
@@ -95,7 +94,8 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: calc(50% - 10px); /* Two columns layout */
+    height: 100%; /* Ensure containers take up full height */
+    width: calc(48% - 20px); /* Two columns layout */
 }
 
 .about-us {
