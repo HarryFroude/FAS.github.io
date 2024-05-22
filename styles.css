@@ -1,11 +1,11 @@
 :root {
-    --light-blue: #F0F8FF; /* Changed to a lighter blue */
+    --light-blue: #F0F8FF; /* Lighter background for better contrast */
     --dark-gray: #2C3E50; /* Darkened the gray */
-    --purple: #8E44AD; /* Slightly darker purple */
-    --instagram-color: #C13584; /* Adjusted Instagram color for better contrast */
+    --purple: #6A1B9A; /* Adjusted to a more accessible purple */
+    --instagram-color: #E4405F; /* Adjusted Instagram color for better contrast */
     --facebook-color: #3B5998; /* Kept the same for brand consistency */
     --amazon-color: #FF9900; /* Kept the same for brand consistency */
-    --footer-bg: #1ABC9C; /* Changed to a more vibrant teal */
+    --footer-bg: #00796B; /* Changed to a darker teal for better contrast */
     --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +80,7 @@ main {
 
 .social-media-section, .about-us, .map, .contact-info {
     flex: 1;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95); /* Increased opacity for better readability */
     border-radius: 10px;
     padding: 20px;
     box-shadow: var(--box-shadow);
@@ -116,11 +116,13 @@ main {
 .card h3, .about-us h2, .contact-info h2 {
     margin-bottom: 15px;
     font-size: 1.2em;
+    color: var(--dark-gray); /* Ensure text color has good contrast */
 }
 
 .card p, .about-us p, .contact-info p {
     margin-bottom: 10px;
     font-size: 0.9em;
+    color: var(--dark-gray); /* Ensure text color has good contrast */
 }
 
 .card i {
