@@ -80,7 +80,7 @@ main {
     gap: 20px;
 }
 
-.social-media-section, .about-us, .map, .contact-section {
+.social-media-section, .about-us, .contact-section, .map-container {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -145,10 +145,10 @@ main {
     color: white;
 }
 
-.contact-section, .map {
+.contact-section, .map-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100%; /* Ensure both sections take up full height */
 }
@@ -188,7 +188,7 @@ main {
 
 .map iframe {
     width: 100%;
-    height: calc(100% - 40px); /* Adjust height to match the contact section */
+    height: 100%;
     border: 0;
     border-radius: 10px;
 }
@@ -216,12 +216,16 @@ footer p {
         gap: 20px;
     }
 
-    .social-media-section, .map, .about-us, .contact-section {
+    .social-media-section, .map-container, .about-us, .contact-section {
         width: 48%;
     }
 
-    .about-us, .contact-section {
+    .about-us, .contact-section, .map-container {
         align-self: stretch;
+    }
+
+    .contact-section, .map-container {
+        height: auto; /* Ensure containers expand to match each other */
     }
 }
 
@@ -237,11 +241,11 @@ footer p {
         margin: 0;
     }
 
-    .map, .contact-section {
+    .map-container, .contact-section {
         height: auto;
     }
 
-    .social-media-section, .about-us, .map, .contact-section {
+    .social-media-section, .about-us, .map-container, .contact-section {
         width: 100%;
     }
 
@@ -253,7 +257,7 @@ footer p {
         flex-direction: column-reverse;
     }
 
-    .map {
+    .map-container {
         order: 2;
     }
 
