@@ -2,223 +2,135 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: #E0F7FA; /* Light blue background similar to the concept image */
-    color: #333;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background: white;
+    color: #004d40;
 }
 
 header {
-    background-image: url('Background_Image.png'); /* Path to the new header background image */
-    background-size: cover;
-    background-position: center;
-    padding: 4% 0; /* Further reduced height */
-    text-align: center;
-    color: #fff;
-    position: relative;
-    margin-bottom: -20px; /* Negative margin to remove gap */
-}
-
-.header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.header-separator {
-    height: 5px;
-    background-color: #9b59b6; /* Purple line */
-    width: 100%;
+    text-align: center;
     position: relative;
-    top: 0; /* Adjust to align with header bottom */
+    width: 100%;
+    height: 200px; /* Adjust height */
+    overflow: hidden;
 }
 
 .logo {
-    max-width: 150px; /* Adjusted logo size */
+    max-width: 100px; /* Adjust size */
     height: auto;
-    margin-bottom: 10px; /* Reduced margin */
+    z-index: 10;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically on mobile */
-    justify-content: center;
-    align-items: center;
-    padding: 20px 20px; /* Reduced padding */
-    background: none;
-    border-radius: 20px;
-    margin: 10px auto; /* Reduced margin */
-    width: 90%;
-    z-index: 20;
-    gap: 20px;
-}
-
-.social-map-container {
-    display: flex;
-    flex-direction: column; /* Stack vertically on smaller screens */
-    justify-content: center;
-    align-items: center;
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.social-media-section, .about-us, .map, .contact-info {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.9);
+.about,
+.contact,
+.social-media,
+.map-container {
+    background-color: #d0ebff;
     border-radius: 10px;
-    padding: 25px; /* Increased padding */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.about h2,
+.contact h2 {
+    color: #005f87;
+    font-size: 1.7em;
+}
+
+.about p,
+.contact p {
+    color: #004d40;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.social-media-block {
+    padding: 20px;
     text-align: center;
-    transition: transform 0.3s;
-    text-decoration: none; /* Ensure the entire block is clickable */
-    color: inherit; /* Ensure the text color remains the same */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* Add this for positioning child elements */
-}
-
-.card {
-    width: 100%; /* Ensure cards take up full width */
-    margin-bottom: 20px; /* Add margin to space out cards */
-    border-radius: 15px; /* Rounded corners */
-    padding: 30px; /* Added padding */
-    text-decoration: none; /* Remove text underlining */
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card h3, .about-us h2, .contact-info h2 {
-    margin-bottom: 15px;
-}
-
-.card p, .about-us p, .contact-info p {
+    border-radius: 10px;
+    color: #fff;
     margin-bottom: 10px;
 }
 
-.card i {
-    font-size: 2em;
-    color: inherit;
-}
-
-.card.instagram {
+.instagram-block {
     background-color: #e1306c;
-    color: white;
 }
 
-.card.facebook {
+.facebook-block {
     background-color: #3b5998;
-    color: white;
 }
 
-.card.amazon {
+.amazon-block {
     background-color: #ff9900;
-    color: white;
 }
 
-.map iframe {
-    width: 100%;
-    height: 400px; /* Adjusted to make it more square */
-    border: 0;
-    border-radius: 10px;
-}
-
-.about-img {
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-    border-radius: 10px;
+.social-media-block h3,
+.social-media-block p {
+    margin: 0;
+    padding: 5px;
 }
 
 footer {
-    background-color: rgba(0, 121, 107, 0.9); /* Transparent complementary color */
+    background-color: #4dabf7;
     color: #fff;
     text-align: center;
-    padding: 20px 0; /* Remove padding for full width */
+    padding: 20px 0; /* Adjust padding */
     position: relative;
-    width: 100%; /* Stretch the entire width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 20;
-    border-radius: 0; /* Remove rounded corners */
+    width: 100%;
 }
 
 footer p {
     margin: 0;
     font-size: 1em;
-    width: 100%; /* Ensure it stretches the full width */
 }
 
-.about-us p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-@media (min-width: 768px) {
-    .social-map-container {
-        flex-direction: row; /* Row direction for larger screens */
-        justify-content: space-between; /* Space between elements */
-        gap: 20px;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr;
     }
 
-    .social-media-section, .map, .about-us, .contact-info {
-        width: 48%; /* Adjusted width for larger screens */
-    }
-
-    .about-us, .contact-info {
-        align-self: stretch; /* Stretch to fill the container */
-    }
-}
-
-@media (min-width: 1024px) {
-    .logo {
-        max-width: 200px; /* Reduced size */
-    }
-}
-
-/* New media query to handle desktop layout becoming too narrow */
-@media (max-width: 1200px) and (max-height: 800px) {
-    .social-map-container {
-        flex-direction: column-reverse; /* Apply mobile layout */
-    }
-
-    .social-media-section, .about-us, .map, .contact-info {
-        width: 100%; /* Full width on mobile layout */
-    }
-
-    .postcard {
-        display: none; /* Hide postcard on narrow screens */
-    }
-}
-
-@media (max-width: 767px) {
-    .main-content {
-        transform: scale(0.8); /* Reduce size by 20% */
-    }
-
-    .map, .contact-info {
-        height: auto; /* Adjust height to auto for mobile */
-    }
-
-    .social-media-section, .about-us, .map, .contact-info {
-        width: 100%; /* Ensure full width on mobile */
-    }
-
-    .card {
-        margin-bottom: 20px; /* Ensure spacing between cards */
-    }
-
-    .social-map-container {
-        flex-direction: column-reverse; /* Swap positions */
-    }
-
-    .postcard {
-        display: none; /* Hide postcard on mobile */
-    }
-
-    footer {
-        width: 100%; /* Stretch the entire width */
+    .about,
+    .contact,
+    .social-media,
+    .map-container {
+        margin-bottom: 20px;
     }
 }
