@@ -77,7 +77,7 @@ header {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px; /* Restore original padding */
     box-shadow: var(--box-shadow);
     text-align: center;
     transition: transform 0.3s;
@@ -93,20 +93,23 @@ header {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 15px;
-    padding: 30px; /* Increased padding for more space inside the boxes */
+    padding: 20px; /* Restore original padding */
+    text-decoration: none; /* Remove underline */
 }
 
 .card:hover {
     transform: scale(1.05);
+    z-index: 10; /* Ensure card appears above neighboring sections */
 }
 
 .card h3, .about-us h2, .contact-info h2 {
     margin-bottom: 15px;
-    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Reduced font size */
 }
 
 .card p, .about-us p, .contact-info p {
     margin-bottom: 10px;
+    font-size: 0.9em; /* Reduced font size */
     text-decoration: none; /* Remove underline */
 }
 
