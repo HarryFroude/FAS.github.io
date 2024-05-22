@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-image: url('Background_Image.png'); /* Update the path as necessary */
+    background-image: url('Background_Image.png');
     background-size: cover;
     background-position: center;
     padding: 1% 0;
@@ -80,7 +80,7 @@ main {
     gap: 20px;
 }
 
-.social-media-section, .about-us, .map, .contact-info {
+.social-media-section, .about-us, .map, .contact-info, .contact-form {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -97,7 +97,7 @@ main {
 }
 
 .about-us p {
-    text-align: center;
+    text-align: justify;
     text-justify: inter-word;
     padding: 0 20px;
 }
@@ -115,12 +115,12 @@ main {
     z-index: 10;
 }
 
-.card h3, .about-us h2, .contact-info h2 {
+.card h3, .about-us h2, .contact-info h2, .contact-form h2 {
     margin-bottom: 15px;
     font-size: 1.2em;
 }
 
-.card p, .about-us p, .contact-info p {
+.card p, .about-us p, .contact-info p, .contact-form p {
     margin-bottom: 10px;
     font-size: 0.9em;
 }
@@ -175,7 +175,7 @@ footer p {
         gap: 20px;
     }
 
-    .social-media-section, .map, .about-us, .contact-info {
+    .social-media-section, .map, .about-us, .contact-info, .contact-form {
         width: 48%;
     }
 
@@ -200,7 +200,7 @@ footer p {
         height: auto;
     }
 
-    .social-media-section, .about-us, .map, .contact-info {
+    .social-media-section, .about-us, .map, .contact-info, .contact-form {
         width: 100%;
     }
 
