@@ -1,5 +1,5 @@
 :root {
-    --light-blue: #F0F8FF; /* Light blue for background */
+    --light-blue: #E0F7FA; /* Light blue for background */
     --dark-gray: #2C3E50; /* Dark gray for text */
     --teal: #50C9C3; /* Teal from the logo */
     --purple: #8E44AD; /* Purple from the logo */
@@ -14,7 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--light-blue);
+    background: linear-gradient(to bottom, #E0F7FA, #50C9C3); /* Gradient background */
     color: var(--dark-gray);
     overflow-x: hidden;
 }
@@ -97,7 +97,7 @@ main {
 }
 
 .about-us p {
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
     padding: 0 20px;
 }
