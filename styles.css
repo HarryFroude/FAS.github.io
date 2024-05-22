@@ -71,17 +71,15 @@ main {
     gap: 20px;
 }
 
-.social-map-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
     gap: 20px;
+    width: 100%;
 }
 
-.social-media-section, .about-us, .map-container, .contact-section {
-    flex: 1;
+.grid-item {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px;
@@ -94,8 +92,6 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100%; /* Ensure containers take up full height */
-    width: 100%; /* Ensure containers take up full width */
 }
 
 .about-us p {
@@ -210,22 +206,10 @@ footer p {
 }
 
 @media (min-width: 768px) {
-    .social-map-container {
-        flex-direction: row;
-        justify-content: space-between;
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
         gap: 20px;
-    }
-
-    .social-media-section, .map-container, .about-us, .contact-section {
-        width: 48%;
-    }
-
-    .about-us, .contact-section, .map-container {
-        align-self: stretch;
-    }
-
-    .contact-section, .map-container {
-        height: auto; /* Ensure containers expand to match each other */
     }
 }
 
@@ -241,28 +225,13 @@ footer p {
         margin: 0;
     }
 
-    .map-container, .contact-section {
-        height: auto;
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
     }
 
-    .social-media-section, .about-us, .map-container, .contact-section {
+    .grid-item {
         width: 100%;
-    }
-
-    .card {
-        margin-bottom: 20px;
-    }
-
-    .social-map-container {
-        flex-direction: column-reverse;
-    }
-
-    .map-container {
-        order: 2;
-    }
-
-    .contact-section {
-        order: 1;
     }
 
     .about-us {
