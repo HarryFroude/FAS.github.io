@@ -81,6 +81,7 @@ header {
 .card {
     width: 100%; /* Ensure cards take up full width */
     margin-bottom: 20px; /* Add margin to space out cards */
+    border-radius: 15px; /* Rounded corners */
 }
 
 .card:hover {
@@ -139,13 +140,12 @@ footer {
     background-color: rgba(0, 121, 107, 0.9); /* Transparent complementary color */
     color: #fff;
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px 0; /* Remove padding for full width */
     position: relative;
-    border-radius: 0 0 20px 20px;
     width: 100%; /* Stretch the entire width */
-    margin: 10px 0; /* Reduced margin */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 20;
+    border-radius: 0; /* Remove rounded corners */
 }
 
 footer p {
@@ -154,7 +154,11 @@ footer p {
     width: 100%; /* Ensure it stretches the full width */
 }
 
-/* Media Queries for Responsiveness */
+.about-us p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 @media (min-width: 768px) {
     .social-map-container {
         flex-direction: row; /* Row direction for larger screens */
@@ -196,6 +200,10 @@ footer p {
 
     .social-map-container {
         flex-direction: column-reverse; /* Swap positions */
+    }
+
+    .postcard {
+        display: none; /* Hide postcard on mobile */
     }
 
     footer {
