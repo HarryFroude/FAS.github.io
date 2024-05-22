@@ -56,7 +56,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px; /* Reduced padding for mobile view */
     background: none;
     border-radius: 20px;
     margin: 10px auto;
@@ -93,6 +93,7 @@ header {
     width: 100%;
     margin-bottom: 20px;
     border-radius: 15px;
+    padding: 30px; /* Increased padding for more space inside the boxes */
 }
 
 .card:hover {
@@ -101,10 +102,12 @@ header {
 
 .card h3, .about-us h2, .contact-info h2 {
     margin-bottom: 15px;
+    text-decoration: none; /* Remove underline */
 }
 
 .card p, .about-us p, .contact-info p {
     margin-bottom: 10px;
+    text-decoration: none; /* Remove underline */
 }
 
 .card i {
@@ -180,6 +183,8 @@ footer p {
 @media (max-width: 767px) {
     .main-content {
         transform: scale(0.8);
+        margin-top: 0; /* Remove top margin for mobile view */
+        margin-bottom: 0; /* Remove bottom margin for mobile view */
     }
 
     .map, .contact-info {
