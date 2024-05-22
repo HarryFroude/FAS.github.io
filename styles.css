@@ -94,6 +94,8 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
+    height: 100%; /* Ensure containers take up full height */
+    width: 100%; /* Ensure containers take up full width */
 }
 
 .about-us p {
@@ -145,15 +147,6 @@ main {
     color: white;
 }
 
-.contact-section, .map-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Ensure both sections take up full height */
-    width: 100%; /* Ensure containers expand to match each other */
-}
-
 .contact-form {
     width: 80%; /* Reduced width of input boxes */
     margin: 0 auto;
@@ -185,6 +178,12 @@ main {
 
 .contact-form button:hover {
     background-color: var(--dark-gray);
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .map iframe {
