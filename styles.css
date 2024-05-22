@@ -53,9 +53,9 @@ header {
 
 .social-map-container {
     display: flex;
-    flex-direction: row; /* Row direction for larger screens */
-    justify-content: space-between; /* Space between elements */
-    align-items: flex-start; /* Align items at the top */
+    flex-direction: column; /* Stack vertically on smaller screens */
+    justify-content: center;
+    align-items: center;
     width: 100%;
     gap: 20px;
 }
