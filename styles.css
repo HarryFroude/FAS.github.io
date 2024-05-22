@@ -31,6 +31,7 @@ header {
     background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better text visibility */
 }
 
+
 .header-content {
     display: flex;
     flex-direction: column;
