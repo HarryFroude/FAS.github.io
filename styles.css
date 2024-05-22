@@ -80,7 +80,7 @@ main {
     gap: 20px;
 }
 
-.social-media-section, .about-us, .map, .contact-info, .contact-form {
+.social-media-section, .about-us, .map, .contact-section {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -115,12 +115,12 @@ main {
     z-index: 10;
 }
 
-.card h3, .about-us h2, .contact-info h2, .contact-form h2 {
+.card h3, .about-us h2, .contact-section h2 {
     margin-bottom: 15px;
     font-size: 1.2em;
 }
 
-.card p, .about-us p, .contact-info p, .contact-form p {
+.card p, .about-us p, .contact-section p {
     margin-bottom: 10px;
     font-size: 0.9em;
 }
@@ -143,6 +143,38 @@ main {
 .card.amazon {
     background-color: var(--amazon-color);
     color: white;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--dark-gray);
 }
 
 .map iframe {
@@ -175,11 +207,11 @@ footer p {
         gap: 20px;
     }
 
-    .social-media-section, .map, .about-us, .contact-info, .contact-form {
+    .social-media-section, .map, .about-us, .contact-section {
         width: 48%;
     }
 
-    .about-us, .contact-info {
+    .about-us, .contact-section {
         align-self: stretch;
     }
 }
@@ -196,11 +228,11 @@ footer p {
         margin: 0;
     }
 
-    .map, .contact-info {
+    .map, .contact-section {
         height: auto;
     }
 
-    .social-media-section, .about-us, .map, .contact-info, .contact-form {
+    .social-media-section, .about-us, .map, .contact-section {
         width: 100%;
     }
 
@@ -216,7 +248,7 @@ footer p {
         order: 2;
     }
 
-    .contact-info {
+    .contact-section {
         order: 1;
     }
 
