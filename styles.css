@@ -128,7 +128,7 @@ header {
     position: absolute;
     bottom: -30px; /* Adjust to cover bottom right */
     right: -30px; /* Adjust to cover bottom right */
-    background: url('path_to_store_image.jpg') no-repeat center center / cover;
+    background: url('FAStoreFront.jpg') no-repeat center center / cover;
     border: 5px solid #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     transform: rotate(-10deg);
