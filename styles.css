@@ -59,7 +59,7 @@ header {
     padding: 10px 20px;
     background: none;
     border-radius: 20px;
-    margin: 10px auto;
+    margin: 0 auto; /* Removed top and bottom margin */
     width: 90%;
     gap: 20px;
 }
@@ -191,8 +191,7 @@ footer p {
 @media (max-width: 767px) {
     .main-content {
         transform: scale(0.8);
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0; /* Removed top and bottom margin */
     }
 
     .map, .contact-info {
