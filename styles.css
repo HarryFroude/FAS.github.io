@@ -83,7 +83,8 @@ header {
     width: 100%; /* Ensure cards take up full width */
     margin-bottom: 20px; /* Add margin to space out cards */
     border-radius: 15px; /* Rounded corners */
-    padding: 25px; /* Added padding */
+    padding: 30px; /* Added padding */
+    text-decoration: none; /* Remove text underlining */
 }
 
 .card:hover {
