@@ -25,7 +25,7 @@ header {
     padding: 1% 0; /* Reduced padding */
     text-align: center;
     color: #fff;
-    margin-bottom: 0;
+    margin: 0; /* Ensure no margin */
     position: relative;
 }
 
@@ -49,6 +49,10 @@ header {
     max-width: 150px;
     height: auto;
     margin-bottom: 10px;
+}
+
+main {
+    margin: 0; /* Ensure no margin */
 }
 
 .main-content {
