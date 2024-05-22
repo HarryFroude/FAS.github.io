@@ -73,15 +73,15 @@ main {
 
 .social-map-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
+    width: 100%;
 }
 
 .social-media-section, .about-us, .map-container, .contact-section {
-    flex: 1;
+    flex: 1 1 calc(50% - 10px); /* Ensure items take up half the width with spacing */
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px;
@@ -94,8 +94,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100%; /* Ensure containers take up full height */
-    width: 100%; /* Ensure containers take up full width */
+    min-height: 300px; /* Ensure minimum height for visual consistency */
 }
 
 .about-us p {
@@ -184,6 +183,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .map iframe {
@@ -209,60 +210,24 @@ footer p {
     width: 100%;
 }
 
-@media (min-width: 768px) {
-    .social-map-container {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .social-media-section, .map-container, .about-us, .contact-section {
-        width: 48%;
-    }
-
-    .about-us, .contact-section, .map-container {
-        align-self: stretch;
-    }
-
-    .contact-section, .map-container {
-        height: auto; /* Ensure containers expand to match each other */
-    }
-}
-
-@media (min-width: 1024px) {
-    .logo {
-        max-width: 200px;
-    }
-}
-
 @media (max-width: 767px) {
     .main-content {
-        transform: scale(0.8);
+        transform: scale(0.9);
         margin: 0;
     }
 
-    .map-container, .contact-section {
-        height: auto;
+    .social-map-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .social-media-section, .about-us, .map-container, .contact-section {
         width: 100%;
+        min-height: auto; /* Adjust min-height for mobile view */
     }
 
     .card {
         margin-bottom: 20px;
-    }
-
-    .social-map-container {
-        flex-direction: column-reverse;
-    }
-
-    .map-container {
-        order: 2;
-    }
-
-    .contact-section {
-        order: 1;
     }
 
     .about-us {
