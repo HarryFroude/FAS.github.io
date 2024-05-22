@@ -206,6 +206,14 @@ footer p {
         flex-direction: column-reverse;
     }
 
+    .map {
+        order: 2; /* Place map second */
+    }
+
+    .contact-info {
+        order: 1; /* Place contact info first */
+    }
+
     footer {
         width: 100%;
     }
