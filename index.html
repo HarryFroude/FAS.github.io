@@ -6,15 +6,41 @@
     <title>Fish Around</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Fish Around is a family-run aquatic centre offering tropical fish, aquarium supplies, and expert advice.">
+    <meta name="keywords" content="aquarium, tropical fish, aquatic supplies, Fish Around, Hailsham">
+    <meta name="author" content="Fish Around">
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Store",
+      "name": "Fish Around",
+      "image": "path_to_image",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5 High St",
+        "addressLocality": "Hailsham",
+        "addressCountry": "UK"
+      },
+      "telephone": "01323844400",
+      "url": "https://www.fisharound.com"
+    }
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
 </head>
 <body>
     <header>
         <div class="header-content">
             <img src="Fish_Around_Logo.png" alt="Fish Around Logo" class="logo">
         </div>
-        <div class="header-separator"></div> <!-- Purple line -->
+        <div class="header-separator"></div>
     </header>
     <main>
         <div class="main-content">
@@ -36,7 +62,7 @@
                         <i class="fab fa-amazon"></i>
                     </a>
                 </div>
-                <section class="about-us">
+                <section class="about-us" id="about-us">
                     <h2>About Us</h2>
                     <p>Welcome to Fish Around, a family-run aquatic centre located in the heart of Hailsham on the High Street. Since we opened in May 2010, we have grown significantly and become a trusted local destination for aquatic supplies.</p>
                     <p>We specialise in freshwater tropical fish, goldfish, and a diverse selection of aquarium plants. We offer special orders, aquarium servicing, and expert advice to help you create and maintain beautiful aquatic environments.</p>
@@ -62,6 +88,18 @@
                     </iframe>
                 </div>
             </div>
+            <section class="contact-form">
+                <h2>Contact Us</h2>
+                <form action="path_to_form_handler" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
         </div>
     </main>
     <footer>
