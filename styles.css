@@ -182,21 +182,6 @@ footer p {
     }
 }
 
-/* New media query to handle desktop layout becoming too narrow */
-@media (max-width: 1200px) and (max-height: 800px) {
-    .social-map-container {
-        flex-direction: column-reverse; /* Apply mobile layout */
-    }
-
-    .social-media-section, .about-us, .map, .contact-info {
-        width: 100%; /* Full width on mobile layout */
-    }
-
-    .postcard {
-        display: none; /* Hide postcard on narrow screens */
-    }
-}
-
 @media (max-width: 767px) {
     .main-content {
         transform: scale(0.8); /* Reduce size by 20% */
