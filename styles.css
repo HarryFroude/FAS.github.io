@@ -73,11 +73,12 @@ main {
 
 .social-map-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .social-media-section, .about-us, .map-container, .contact-section {
@@ -94,8 +95,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100%; /* Ensure containers take up full height */
-    width: 100%; /* Ensure containers take up full width */
+    width: calc(50% - 10px); /* Two columns layout */
 }
 
 .about-us {
@@ -103,6 +103,17 @@ main {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.additional-image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.additional-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .about-us p {
@@ -218,67 +229,12 @@ footer p {
     width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .social-map-container {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .social-media-section, .map-container, .about-us, .contact-section {
-        width: 48%;
-    }
-
-    .about-us, .contact-section, .map-container {
-        align-self: stretch;
-    }
-
-    .contact-section, .map-container {
-        height: auto; /* Ensure containers expand to match each other */
-    }
-}
-
-@media (min-width: 1024px) {
-    .logo {
-        max-width: 200px;
-    }
-}
-
-@media (max-width: 767px) {
-    .main-content {
-        transform: scale(0.8);
-        margin: 0;
-    }
-
-    .map-container, .contact-section {
-        height: auto;
+        flex-direction: column;
     }
 
     .social-media-section, .about-us, .map-container, .contact-section {
-        width: 100%;
-    }
-
-    .card {
-        margin-bottom: 20px;
-    }
-
-    .social-map-container {
-        flex-direction: column-reverse;
-    }
-
-    .map-container {
-        order: 2;
-    }
-
-    .contact-section {
-        order: 1;
-    }
-
-    .about-us {
-        padding-top: 0;
-    }
-
-    footer {
         width: 100%;
     }
 }
