@@ -56,7 +56,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px; /* Reduced padding for mobile view */
+    padding: 10px 20px;
     background: none;
     border-radius: 20px;
     margin: 10px auto;
@@ -77,7 +77,7 @@ header {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 20px; /* Restore original padding */
+    padding: 20px;
     box-shadow: var(--box-shadow);
     text-align: center;
     transition: transform 0.3s;
@@ -90,27 +90,27 @@ header {
 }
 
 .card {
-    width: 100%;
+    width: 90%; /* Reduced width to 90% */
     margin-bottom: 20px;
     border-radius: 15px;
-    padding: 20px; /* Restore original padding */
-    text-decoration: none; /* Remove underline */
+    padding: 20px;
+    text-decoration: none;
 }
 
 .card:hover {
     transform: scale(1.05);
-    z-index: 10; /* Ensure card appears above neighboring sections */
+    z-index: 10;
 }
 
 .card h3, .about-us h2, .contact-info h2 {
     margin-bottom: 15px;
-    font-size: 1.2em; /* Reduced font size */
+    font-size: 1.2em;
 }
 
 .card p, .about-us p, .contact-info p {
     margin-bottom: 10px;
-    font-size: 0.9em; /* Reduced font size */
-    text-decoration: none; /* Remove underline */
+    font-size: 0.9em;
+    text-decoration: none;
 }
 
 .card i {
@@ -186,8 +186,8 @@ footer p {
 @media (max-width: 767px) {
     .main-content {
         transform: scale(0.8);
-        margin-top: 0; /* Remove top margin for mobile view */
-        margin-bottom: 0; /* Remove bottom margin for mobile view */
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .map, .contact-info {
