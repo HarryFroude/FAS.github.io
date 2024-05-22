@@ -11,10 +11,11 @@ header {
     background-image: url('Background_Image.png'); /* Path to the new header background image */
     background-size: cover;
     background-position: center;
-    padding: 8% 0; /* Further reduced height */
+    padding: 4% 0; /* Further reduced height */
     text-align: center;
     color: #fff;
     position: relative;
+    margin-bottom: -20px; /* Negative margin to remove gap */
 }
 
 .header-content {
@@ -33,9 +34,9 @@ header {
 }
 
 .logo {
-    max-width: 200px; /* Adjusted logo size */
+    max-width: 150px; /* Adjusted logo size */
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduced margin */
 }
 
 .main-content {
@@ -177,7 +178,7 @@ footer p {
 
 @media (min-width: 1024px) {
     .logo {
-        max-width: 275px;
+        max-width: 200px; /* Reduced size */
     }
 }
 
