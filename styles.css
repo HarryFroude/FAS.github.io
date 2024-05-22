@@ -43,10 +43,10 @@ header {
     flex-direction: column; /* Stack elements vertically on mobile */
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
+    padding: 20px 20px; /* Reduced padding */
     background: none;
     border-radius: 20px;
-    margin: 20px auto;
+    margin: 10px auto; /* Reduced margin */
     width: 90%;
     z-index: 20;
     gap: 20px;
@@ -142,8 +142,8 @@ footer {
     padding: 20px 20px;
     position: relative;
     border-radius: 0 0 20px 20px;
-    width: 90%;
-    margin: 20px auto;
+    width: 100%; /* Stretch the entire width */
+    margin: 10px 0; /* Reduced margin */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 20;
 }
@@ -191,5 +191,13 @@ footer p {
 
     .card {
         margin-bottom: 20px; /* Ensure spacing between cards */
+    }
+
+    .social-map-container {
+        flex-direction: column-reverse; /* Swap positions */
+    }
+
+    footer {
+        width: 100%; /* Stretch the entire width */
     }
 }
