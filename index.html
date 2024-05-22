@@ -70,11 +70,20 @@
                 </section>
             </div>
             <div class="social-map-container">
-                <div class="contact-info">
+                <div class="contact-section">
                     <h2>Contact Us</h2>
                     <p>5 High St, Hailsham, United Kingdom</p>
                     <p>Email: <a href="mailto:Fisharoundhailsham@outlook.com">Fisharoundhailsham@outlook.com</a></p>
                     <p>Phone: <a href="tel:01323844400">01323 844400</a></p>
+                    <form action="path_to_form_handler" method="POST" class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
                 <div class="map">
                     <iframe 
@@ -88,18 +97,6 @@
                     </iframe>
                 </div>
             </div>
-            <section class="contact-form">
-                <h2>Contact Us</h2>
-                <form action="path_to_form_handler" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Send</button>
-                </form>
-            </section>
         </div>
     </main>
     <footer>
