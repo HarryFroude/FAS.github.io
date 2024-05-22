@@ -150,7 +150,7 @@ main {
 }
 
 .card.amazon {
-    background-color: var (--amazon-color);
+    background-color: var(--amazon-color);
     color: white;
 }
 
@@ -169,13 +169,13 @@ main {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid var (--dark-gray);
+    border: 1px solid var(--dark-gray);
     border-radius: 5px;
 }
 
 .contact-form button {
     padding: 10px 20px;
-    background-color: var (--purple);
+    background-color: var(--purple);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -184,7 +184,7 @@ main {
 }
 
 .contact-form button:hover {
-    background-color: var (--dark-gray);
+    background-color: var(--dark-gray);
 }
 
 .map-container {
@@ -193,19 +193,18 @@ main {
     align-items: center;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Ensure any overflow is hidden */
-    border-radius: 10px; /* Ensures the map container has rounded edges */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.map-container iframe {
+.map iframe {
     width: 100%;
     height: 100%;
     border: 0;
-    border-radius: 10px; /* Ensures the map iframe has rounded edges to match the container */
 }
 
 footer {
-    background-color: var (--footer-bg);
+    background-color: var(--footer-bg);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -270,7 +269,6 @@ footer p {
 
     .map-container {
         order: 2;
-        padding: 0; /* Ensure no extra padding on small screens */
     }
 
     .contact-section {
