@@ -11,7 +11,7 @@ header {
     background-image: url('Background_Image.png'); /* Path to the new header background image */
     background-size: cover;
     background-position: center;
-    padding: 15px 20px; /* Reduced height */
+    padding: 20px 20px; /* Further reduced height */
     text-align: center;
     color: #fff;
     position: relative;
@@ -29,11 +29,11 @@ header {
     background-color: #9b59b6; /* Purple line */
     width: 100%;
     position: relative;
-    top: 5px; /* Adjust this value to align with header bottom */
+    top: -5px; /* Adjust this value to align with header bottom */
 }
 
 .logo {
-    max-width: 250px; /* Adjusted logo size */
+    max-width: 200px; /* Adjusted logo size */
     height: auto;
     margin-bottom: 20px;
 }
@@ -75,6 +75,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative; /* Add this for positioning child elements */
 }
 
 .card {
@@ -122,11 +123,11 @@ header {
 }
 
 .postcard {
-    width: 150px;
-    height: 100px;
+    width: 450px; /* 3 times bigger */
+    height: 300px; /* 3 times bigger */
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    bottom: -30px; /* Adjust to cover bottom right */
+    right: -30px; /* Adjust to cover bottom right */
     background: url('path_to_store_image.jpg') no-repeat center center / cover;
     border: 5px solid #fff;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -171,7 +172,7 @@ footer p {
 
 @media (min-width: 1024px) {
     .logo {
-        max-width: 375px;
+        max-width: 275px;
     }
 }
 
