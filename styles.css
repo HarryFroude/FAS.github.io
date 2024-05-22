@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-image: url('path_to_the_image/Create_a_background_image_for_the_header_of_a_webs.png'); /* Update the path as necessary */
+    background-image: url('Background_Image.png'); /* Update the path as necessary */
     background-size: cover;
     background-position: center;
     padding: 1% 0;
