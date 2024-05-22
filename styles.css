@@ -163,21 +163,7 @@ footer p {
     text-justify: inter-word;
 }
 
-@media (min-width: 768px) {
-    .social-map-container {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-    }
 
-    .social-media-section, .map, .about-us, .contact-info {
-        width: 48%;
-    }
-
-    .about-us, .contact-info {
-        align-self: stretch;
-    }
-}
 
 @media (min-width: 1024px) {
     .logo {
