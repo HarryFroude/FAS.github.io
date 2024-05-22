@@ -195,6 +195,7 @@ main {
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
+    position: relative; /* Added to ensure iframe respects container's border radius */
 }
 
 .map iframe {
@@ -202,6 +203,9 @@ main {
     height: 100%;
     border: 0;
     border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 footer {
