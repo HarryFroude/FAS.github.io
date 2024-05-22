@@ -80,7 +80,7 @@ main {
     gap: 20px;
 }
 
-.social-media-section, .about-us, .contact-section, .map-container {
+.social-media-section, .about-us, .map-container, .contact-section {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -151,6 +151,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%; /* Ensure both sections take up full height */
+    width: 100%; /* Ensure containers expand to match each other */
 }
 
 .contact-form {
