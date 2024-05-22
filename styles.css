@@ -1,6 +1,6 @@
 :root {
-    --light-blue: #E0F7FA; /* Light blue for background */
-    --dark-gray: #333; /* Dark gray for text */
+    --light-blue: #F0F8FF; /* Light blue for background */
+    --dark-gray: #2C3E50; /* Dark gray for text */
     --teal: #50C9C3; /* Teal from the logo */
     --purple: #8E44AD; /* Purple from the logo */
     --instagram-color: #C13584; /* Instagram color */
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-image: url('Background_Image.png');
+    background-image: url('path_to_the_image/Create_a_background_image_for_the_header_of_a_webs.png'); /* Update the path as necessary */
     background-size: cover;
     background-position: center;
     padding: 1% 0;
@@ -30,7 +30,6 @@ header {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better text visibility */
 }
-
 
 .header-content {
     display: flex;
