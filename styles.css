@@ -14,7 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #E0F7FA, #8E44AD#50C9C3); /* Gradient background #50C9C3 */
+    background: linear-gradient(to bottom, #E0F7FA, #8E44AD); /* Gradient background #50C9C3 */
     color: var(--dark-gray);
     overflow-x: hidden;
 }
