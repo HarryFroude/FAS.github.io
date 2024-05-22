@@ -89,8 +89,18 @@ header {
     position: relative;
 }
 
+.about-us {
+    padding: 20px; /* Ensuring even padding on all sides */
+}
+
+.about-us p {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0; /* Removing default margins */
+}
+
 .card {
-    width: 90%; /* Reduced width to 90% */
+    width: 90%;
     margin-bottom: 20px;
     border-radius: 15px;
     padding: 20px;
@@ -156,11 +166,6 @@ footer p {
     width: 100%;
 }
 
-.about-us p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
 @media (min-width: 768px) {
     .social-map-container {
         flex-direction: row;
@@ -207,11 +212,11 @@ footer p {
     }
 
     .map {
-        order: 2; /* Place map second */
+        order: 2;
     }
 
     .contact-info {
-        order: 1; /* Place contact info first */
+        order: 1;
     }
 
     footer {
