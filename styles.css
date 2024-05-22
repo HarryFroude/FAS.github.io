@@ -22,7 +22,7 @@ header {
     background-image: url('Background_Image.png');
     background-size: cover;
     background-position: center;
-    padding: 4% 0;
+    padding: 1% 0; /* Reduced padding */
     text-align: center;
     color: #fff;
     margin-bottom: 0;
