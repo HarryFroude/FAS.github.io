@@ -1,12 +1,12 @@
 :root {
-    --light-blue: #E0F7FA; /* Light blue for background */
-    --dark-gray: #2C3E50; /* Dark gray for text */
-    --teal: #50C9C3; /* Teal from the logo */
-    --purple: #8E44AD; /* Purple from the logo */
-    --instagram-color: #C13584; /* Instagram color */
-    --facebook-color: #3B5998; /* Facebook color */
-    --amazon-color: #FF9900; /* Amazon color */
-    --footer-bg: #8E44AD; /* Purple for footer background */
+    --light-blue: #E0F7FA;
+    --dark-gray: #2C3E50;
+    --teal: #50C9C3;
+    --purple: #8E44AD;
+    --instagram-color: #C13584;
+    --facebook-color: #3B5998;
+    --amazon-color: #FF9900;
+    --footer-bg: #8E44AD;
     --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -14,7 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #E0F7FA, #50C9C3); /* Gradient background */
+    background: linear-gradient(to bottom, #E0F7FA, #50C9C3);
     color: var(--dark-gray);
     overflow-x: hidden;
 }
@@ -28,7 +28,7 @@ header {
     color: #fff;
     margin: 0;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay for better text visibility */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header-content {
@@ -94,8 +94,8 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100%; /* Ensure containers take up full height */
-    width: 100%; /* Ensure containers take up full width */
+    height: 100%;
+    width: 100%;
 }
 
 .about-us {
@@ -106,7 +106,7 @@ main {
 }
 
 .about-us p {
-    text-align: center;
+    text-align: justify;
     text-justify: inter-word;
     padding: 0 20px;
 }
@@ -155,7 +155,7 @@ main {
 }
 
 .contact-form {
-    width: 80%; /* Reduced width of input boxes */
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -234,7 +234,7 @@ footer p {
     }
 
     .contact-section, .map-container {
-        height: auto; /* Ensure containers expand to match each other */
+        height: auto;
     }
 }
 
@@ -246,8 +246,7 @@ footer p {
 
 @media (max-width: 767px) {
     .main-content {
-        transform: scale(0.8);
-        margin: 0;
+        padding: 20px;
     }
 
     .map-container, .contact-section {
@@ -256,6 +255,7 @@ footer p {
 
     .social-media-section, .about-us, .map-container, .contact-section {
         width: 100%;
+        box-sizing: border-box;
     }
 
     .card {
