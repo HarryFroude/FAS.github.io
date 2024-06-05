@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <meta name="description" content="Fish Around is a family-run aquatic centre offering tropical fish, aquarium supplies, and expert advice.">
     <meta name="keywords" content="aquarium, tropical fish, aquatic supplies, Fish Around, Hailsham">
     <meta name="author" content="Fish Around">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Fish Around">
+    <meta property="og:description" content="Family-run aquatic centre offering tropical fish, aquarium supplies, and expert advice.">
+    <meta property="og:image" content="path_to_image">
+    <meta property="og:url" content="https://www.fisharound.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fish Around">
+    <meta name="twitter:description" content="Family-run aquatic centre offering tropical fish, aquarium supplies, and expert advice.">
+    <meta name="twitter:image" content="path_to_image">
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -34,17 +45,49 @@
       gtag('js', new Date());
       gtag('config', 'UA-XXXXXXXXX-X');
     </script>
+    <!-- Swiper JS for Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="Fish_Around_Logo_2.png" alt="Fish Around Logo" class="logo">
+            <img src="Fish_Around_Logo.png" alt="Fish Around Logo" class="logo">
         </div>
         <div class="header-separator"></div>
     </header>
     <main>
+        <!-- New Carousel Section -->
+        <section class="image-carousel">
+            <h2>Gallery</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="Gallery/Instagram_Post.jpeg" data-lightbox="gallery"><img src="Gallery/Instagram_Post.jpeg" alt="Image 1"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="Gallery/Store_Counter.jpeg" data-lightbox="gallery"><img src="Gallery/Store_Counter.jpeg" alt="Image 2"></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="Gallery/About_Us_Image.png" data-lightbox="gallery"><img src="Gallery/About_Us_Image.png" alt="Image 3"></a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
         <div class="main-content">
             <div class="social-map-container">
+                <!-- About Us Section -->
+                <section class="about-us" id="about-us">
+                    <h2>About Us</h2>
+                    <p>Welcome to Fish Around Hailsham, a family-run Aquatic Centre located in the heart of Hailsham on the High Street.</p>
+                    <p>Since we opened in May 2010, we have grown significantly and become a trusted local destination for aquatic supplies.</p>
+                    <p>We specialise in freshwater tropical fish, cold water fish, Black Muk Turtles, and a diverse selection of aquarium plants. We offer special orders, aquarium servicing, pond servicing, and expert advice to help you create and maintain beautiful aquatic environments. We are also an Aqua One approved stockist, and stock a wide range of Aquariums and Terrariums.</p>
+                    <p>Our friendly and knowledgeable team is dedicated to providing excellent service, and fostering a vibrant aquatic community.</p>
+                    <p>Come in and meet the Fish Around Team.</p>
+                </section>
+                <!-- Social Media Section -->
                 <div class="social-media-section">
                     <a href="https://www.instagram.com/fish_around_hailsham" target="_blank" class="card instagram">
                         <h3>Instagram</h3>
@@ -62,18 +105,7 @@
                         <i class="fab fa-amazon"></i>
                     </a>
                 </div>
-                <section class="about-us" id="about-us">
-                    <h2>About Us</h2>
-                    <p>Welcome to Fish Around Hailsham, a family-run Aquatic Centre located in the heart of Hailsham on the High Street.</p>
-                    <p>Since we opened in May 2010, we have grown significantly and become a trusted local destination for aquatic supplies.</p>
-                    <p>We specialise in freshwater tropical fish, cold water fish, Black Muk Turtles, and a diverse selection of aquarium plants. We offer special orders, aquarium servicing, pond servicing, and expert advice to help you create and maintain beautiful aquatic environments. We are also an Aqua One approved stockist, and stock a wide range of Aquariums and Terrariums.</p>
-                    <p>Our friendly and knowledgeable team is dedicated to providing excellent service, and fostering a vibrant aquatic community.</p>
-                    <p>Come in and meet the Fish Around Team.</p>
-                </section>
             </div>
-            <!-- section class="mobile-image-container" -->
-                <!-- img src="storefront.jpg" alt="Fish Around Storefront" class="additional-image"-->
-            </section>
             <div class="social-map-container">
                 <div class="contact-section">
                     <h2>Contact Us</h2>
@@ -112,7 +144,9 @@
     <footer>
         <p>&copy; 2024 Fish Around. All rights reserved.</p>
     </footer>
-
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script>
     document.querySelector('.contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -141,7 +175,50 @@
                 errorMessage.style.display = 'block';
             }
         };
+    
+        xhr.onerror = function() {
+            loadingSpinner.style.display = 'none';
+            successMessage.style.display = 'none';
+            errorMessage.style.display = 'block';
+            errorMessage.textContent = 'Network error. Please try again later.';
+        };
+    
         xhr.send(formData);
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        spaceBetween: 20, // Dynamic space between slides
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        mousewheel: true,
+        autoplay: {
+            delay: 3000, // Auto scroll every 3 seconds
+            disableOnInteraction: false, // Continue auto scroll after interaction
+        },
+        initialSlide: Math.floor(Math.random() * document.querySelectorAll('.swiper-slide').length),
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                centeredSlides: true,
+            },
+            768: {
+                slidesPerView: 2,
+                centeredSlides: true,
+            },
+            1024: {
+                slidesPerView: 3,
+                centeredSlides: true,
+            },
+        }
     });
     </script>
 </body>
