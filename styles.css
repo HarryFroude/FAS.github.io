@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-image: url('Background_Image_2.jpeg');
+    background-image: url('Background_Image.jpeg');
     background-size: cover;
     background-position: center;
     padding: 1% 0;
@@ -48,7 +48,7 @@ header {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 300px;
     height: auto;
     margin-bottom: 0;
 }
@@ -80,7 +80,7 @@ main {
     gap: 20px;
 }
 
-.social-media-section, .about-us, .map-container, .contact-section {
+.social-media-section, .about-us, .map-container, .contact-section, .image-carousel {
     flex: 1;
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -95,7 +95,7 @@ main {
     align-items: center;
     position: relative;
     height: 100%;
-    width: 100%;
+    margin: 20px 0; /* Ensure consistent vertical spacing */
 }
 
 .about-us {
@@ -124,7 +124,7 @@ main {
     z-index: 10;
 }
 
-.card h3, .about-us h2, .contact-section h2 {
+.card h3, .about-us h2, .contact-section h2, .image-carousel h2 {
     margin-bottom: 15px;
     font-size: 1.2em;
 }
@@ -210,6 +210,47 @@ main {
     border-radius: 10px;
 }
 
+.image-carousel {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    width: calc(100% - 80px); /* Ensure the width matches the rest of the containers with padding */
+    margin: 20px auto; /* Center horizontally and add space at the top and bottom */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px; /* Rounded corners for the carousel */
+    overflow: hidden; /* Hide the overflow images */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+}
+
+.swiper-slide:not(.swiper-slide-active) img {
+    opacity: 0.5;
+}
+
+.swiper-slide-active img {
+    opacity: 1;
+}
+
 footer {
     background-color: var(--footer-bg);
     color: #fff;
@@ -230,11 +271,12 @@ footer p {
     .social-map-container {
         flex-direction: row;
         justify-content: space-between;
-        gap: 20px;
+        gap: 20px; /* Same gap horizontally */
     }
 
     .social-media-section, .map-container, .about-us, .contact-section {
         width: 48%;
+        margin: 0; /* Remove individual margin */
     }
 
     .about-us, .contact-section, .map-container {
@@ -244,11 +286,11 @@ footer p {
     .contact-section, .map-container {
         height: auto;
     }
-}
 
-@media (min-width: 1024px) {
-    .logo {
-        max-width: 200px;
+    .image-carousel {
+        width: calc(100% - 80px); /* Ensure the width matches the rest of the containers with padding */
+        max-width: 100%;
+        margin-bottom: 20px; /* Ensure same gap vertically */
     }
 }
 
@@ -264,6 +306,7 @@ footer p {
     .social-media-section, .about-us, .map-container, .contact-section {
         width: 100%;
         box-sizing: border-box;
+        margin: 0 0 20px; /* Ensure same gap vertically */
     }
 
     .card {
@@ -272,6 +315,8 @@ footer p {
 
     .social-map-container {
         flex-direction: column-reverse;
+        gap: 20px; /* Reduce gap between sections */
+        margin: 0; /* Remove bottom margin */
     }
 
     .map-container {
@@ -284,6 +329,13 @@ footer p {
 
     .about-us {
         padding-top: 0;
+    }
+
+    .image-carousel {
+        display: block;
+        order: 2;
+        width: calc(100% - 80px); /* Ensure width fits within mobile view with padding */
+        margin: 20px auto; /* Center horizontally and add space at the top and bottom */
     }
 
     footer {
