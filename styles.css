@@ -288,7 +288,7 @@ footer p {
     }
 
     .image-carousel {
-        width: calc(100% - 80px); /* Ensure the width matches the rest of the containers with padding */
+        width: calc(100% - 180px); /* Ensure the width matches the rest of the containers with padding */
         max-width: 100%;
         margin-bottom: 20px; /* Ensure same gap vertically */
     }
