@@ -131,7 +131,7 @@ main {
 
 /* Style the bullet lists */
 .about-us ul {
-  list-style: disc outside; /* Standard bullet style */
+  list-style: disc inside; /* Standard bullet style */
   margin: 0;               /* Reset default list margins */
   margin-left: 40px;       /* Indent bullets so they align nicely */
   padding: 0;
