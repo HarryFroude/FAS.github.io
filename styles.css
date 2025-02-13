@@ -108,18 +108,49 @@ main {
     margin: 20px 0; /* Ensure consistent vertical spacing */
 }
 
+/* Override the shared 'text-align: center;' and align items to the left. */
 .about-us {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensures content is aligned left in a flex container */
+  text-align: left;        /* Overrides the center text alignment */
+  gap: 1rem;               /* Spacing between paragraphs/lists */
+  padding: 20px;           /* Matches your other containers' padding */
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
 }
 
+/* Keep paragraphs justified if desired, but ensure they are left-aligned for bullet points. */
 .about-us p {
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 0 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;               /* Reset default paragraph margins */
+  margin-bottom: 1rem;     /* Add space below each paragraph */
 }
+
+/* Style the bullet lists */
+.about-us ul {
+  list-style: disc outside; /* Standard bullet style */
+  margin: 0;               /* Reset default list margins */
+  margin-left: 40px;       /* Indent bullets so they align nicely */
+  padding: 0;
+  text-align: left;
+}
+
+/* Space out individual list items */
+.about-us li {
+  margin-bottom: 0.5rem;   /* Slight spacing between bullets */
+}
+
+/* Optional: Adjust heading style in About Us */
+.about-us h2 {
+  align-self: center;      /* Keep the heading centered if you like */
+  text-align: center;      /* Or remove this if you prefer it left-aligned */
+  margin-top: 0;           /* Remove extra space above the heading */
+  margin-bottom: 1rem;     /* Spacing below the heading */
+}
+
 
 .card {
     width: 90%;
