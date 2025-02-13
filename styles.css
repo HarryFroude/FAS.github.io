@@ -116,7 +116,7 @@ main {
 }
 
 .about-us p {
-    text-align: left;
+    text-align: justify;
     text-justify: inter-word;
     padding: 0 20px;
 }
